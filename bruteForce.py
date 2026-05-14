@@ -9,7 +9,7 @@ FAIL_TEXT = "Invalid credentials"
 
 session = requests.Session()
 
-with open("rockyou.txt", "r", errors="ignore") as f:
+with open("sample-wordlist.txt", "r", errors="ignore") as f:
     passwords = [x.strip() for x in f if x.strip()]
 
 headers = {
